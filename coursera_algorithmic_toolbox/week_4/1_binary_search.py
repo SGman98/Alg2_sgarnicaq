@@ -7,7 +7,7 @@ def bin_search(list_, i):
         if list_[mid] < i:
             low = mid + 1
         else:
-            high = mid
+            high = mid - 1
     return -1
 
 if __name__ == '__main__':
@@ -15,5 +15,4 @@ if __name__ == '__main__':
     list_ = [int(x) for x in input().split()]
     k = int(input()) 
     search_list = [int(x) for x in input().split()]
-
     print(' '.join([str(bin_search(list_, i)) for i in search_list]))
