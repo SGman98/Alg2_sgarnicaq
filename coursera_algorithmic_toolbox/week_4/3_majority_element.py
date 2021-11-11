@@ -1,8 +1,9 @@
 def majority_element(list_):
     list_ = sorted(list_)
-    maj = len(list_) // 2
-    for i in range(maj + 1):
-        if list_[i] == list_[i + maj]:
+    half = len(list_) // 2 # Neccessary number to be majority - 1 (for indexing)
+    half_ceil = -(len(list_) // -2) # difference if n is odd or even
+    for i in range(half_ceil):
+        if list_[i] == list_[i + half]: # If the ith element is equal to the number at maj distance it means it es majority
             return 1
     return 0
 
