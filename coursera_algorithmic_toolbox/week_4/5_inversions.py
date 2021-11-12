@@ -16,7 +16,7 @@ def merge(b,c):
             d.append(b.pop(0))
         else:
             d.append(c.pop(0))
-            inversions += 1
+            inversions += 1 * len(b)
     d += b + c
     return d, inversions
 
