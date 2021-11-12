@@ -1,6 +1,6 @@
 def points_and_segments(segments, points):
     # For each point count in how many segments it exists
-    return [[point in range(segment[0], segment[1]) for segment in segments].count(True) for point in points]
+    return [len(list(filter(lambda x: x[0] <= point and x[1] >= point, segments))) for point in points]
 
 
 if __name__ == '__main__':
