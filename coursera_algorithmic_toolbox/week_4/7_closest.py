@@ -1,7 +1,7 @@
 import math
 
 def brute_force(points):
-    min_distance = 10000
+    min_distance = float('inf')
     for i in range(len(points)):
         for j in range(i+1, len(points)):
             new_distance = distance(points[i], points[j])
@@ -27,7 +27,7 @@ def divide(points):
     # print(f'{middle_line = } --- {min_distance_div = }')
     # print(f'{trim = }')
     # print(f'{result = :.6f}')
-    return f'{result:.6f}'
+    return f'{result:.4f}'
 
 
 if __name__ == '__main__':
