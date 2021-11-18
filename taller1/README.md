@@ -3,7 +3,7 @@
 El codigo usado para resolver este problema es el siguiente:
 
 ```python
-def fuerza_bruta(target, sequence): # O(n)???
+def fuerza_bruta(target, sequence): # O(n)==???
     target_len = len(target) # O(1)
     sequence_len = len(sequence) # O(1)
 
@@ -62,3 +62,5 @@ fuerza_bruta
 ```
 fuerza_bruta       O(n*m) = O(1) + O(1) + O(1) + O(n*m) + O(1)
 ```
+> Teniendo en cuenta que `n` es el la longitud de la secuencia `sequence`
+y `m` es la longitud de la cadena objetivo `target`
