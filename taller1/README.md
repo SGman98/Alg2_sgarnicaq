@@ -66,12 +66,12 @@ fuerza_bruta
  ├── asignacion                             O(1)
  ├── asignacion                             O(1)
  ├── asignacion                             O(1)
- ├── bucle                                  O(n*m) = O(n) * O(m) * [O(1) + O(1)]
+ ├── bucle    O(n) * O(m) * [O(1) + O(1)] = O(n*m)
  └── retorno                                O(1)
 ```
 > ya no quedan mas bucles ni condiciones por lo que se suma el O de la iteracion interna
 ```
-fuerza_bruta       O(n*m) = O(1) + O(1) + O(1) + O(n*m) + O(1)
+fuerza_bruta  O(n) * O(m) * [O(1) + O(1)] = O(n*m)
 ```
 > Teniendo en cuenta que `n` es el la longitud de la secuencia `sequence`
 y `m` es la longitud de la cadena objetivo `target`
