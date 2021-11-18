@@ -19,7 +19,18 @@ def fuerza_bruta(target, sequence): # O(n)==???
 
     return result # O(1)
 ```
-> Reduccion problema complejidad O(n)=
+
+### Funcionamiento del Codigo
+
+1. Se itera sobre `sequence`
+2. Por cada iteracion de la secuencia se itera sobre `target`
+3. Mientras el elemento en `target` sea igual al elemento en `sequence` sigue iterando `target`
+4. Si en la ultima iteracion de `target` se evidencia que existe la cadena en `sequence` se adjunta el resultado
+a `result`
+5. En caso contrario se rompe el bucle de `target` y se sigue iterando sobre `sequence`
+6. Al final de los bucles se retorna la lista de `result`
+
+### Reduccion problema complejidad O(n)=
 ```
 fuerza_bruta
  ├── asignacion                             O(1)
